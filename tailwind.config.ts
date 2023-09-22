@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  darkMode: "media",
+  darkMode: "class",
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -32,7 +32,7 @@ const config: Config = {
         "base-content": "rgb(var(--color-base-content) / <alpha-value>)",
       },
       fontSize: {
-        nav: ["16px", { fontWeight: "400", lineHeight: "16px" }],
+        nav: ["15px", { fontWeight: "400", lineHeight: "15px" }],
         navMobile: ["24px", { fontWeight: "400", lineHeight: "25px" }],
         bodyM: ["16px", { fontWeight: "400", lineHeight: "26px" }],
         bodyMMobile: ["14px", { fontWeight: "400", lineHeight: "23px" }],
@@ -44,7 +44,7 @@ const config: Config = {
         headingMMobile: ["24px", { lineHeight: "100%", fontWeight: "300" }],
       },
       boxShadow: {
-        button: "0 15px 15px -10px #FF9F8E",
+        themeContainer: "0 0 5px rgba(0,0,0,.15)",
       },
     },
   },
