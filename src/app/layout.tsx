@@ -7,6 +7,7 @@ import { ReduxProvider } from "@/components/provider/ReduxProvider";
 import ThemeSwitch from "@/components/main/ThemeSwitch/ThemeSwitch";
 import { Header } from "@/components/layout/Header/Header";
 import { Footer } from "@/components/layout/Footer/Footer";
+import { MotionLayout } from "@/components/provider/MotionLayout";
 
 const alata = Alata({
   subsets: ["latin"],
@@ -37,10 +38,12 @@ export default function RootLayout({
       >
         <ReduxProvider>
           <ThemeProviderC>
-            <ThemeSwitch />
-            <Header />
-            {children}
-            <Footer />
+            <MotionLayout>
+              <ThemeSwitch />
+              <Header />
+              {children}
+              <Footer />
+            </MotionLayout>
           </ThemeProviderC>
         </ReduxProvider>
       </body>

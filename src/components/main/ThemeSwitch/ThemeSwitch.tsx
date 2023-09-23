@@ -1,25 +1,23 @@
 "use client";
-import { useState, useEffect, Suspense } from "react";
+import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-import Image from "next/image";
-import { AriaDescText } from "../../UI/AriaDescText";
+
 import {
-  selectAllThemesType,
-  selectCurrentTheme,
+  selectShowDrawer,
   setCurrentTheme,
 } from "@/redux/features/theme.slice";
 import { useDispatch, useSelector } from "react-redux";
-import { ThemeItem } from "./ThemeItem";
-import { Tthemestype } from "@/types/index.t";
-
+import { motion } from "framer-motion";
+import { ThemeCarousel } from "./ThemeCarousel";
+import { AnimatePresence } from "framer-motion";
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme, themes } = useTheme();
-  const themesArray = useSelector(selectAllThemesType);
+  const showDrawer = useSelector(selectShowDrawer);
   const dispatch = useDispatch();
   useEffect(() => {
     let currentTheme = localStorage.getItem("theme");
-
+    if (!currentTheme) setTheme("light");
     setMounted(true);
   }, [theme]);
 
@@ -32,17 +30,31 @@ const ThemeSwitch = () => {
     dispatch(setCurrentTheme(theme));
   };
   return (
-    <div className="py-[20px] pb-[30px] bg-base-100 shadow-themeContainer">
-      <p className="text-center mb-[15px] text-bodyM">Select Theme</p>
-      <ul
-        id="theme-menu"
-        className="flex gap-[20px] w-full max-w-[1400px] mx-auto test-border"
-      >
-        {themesArray.map((theme) => {
-          return <ThemeItem theme={theme} setTheme={setThemeHandler} />;
-        })}
-      </ul>
-    </div>
+    <>
+      <AnimatePresence>
+        <motion.div
+          layout
+          transition={{
+            duration: 1,
+
+            damping: 25,
+            stiffness: 500,
+          }}
+          animate={{
+            height: showDrawer ? "auto" : 0,
+            y: showDrawer ? 0 : -200,
+          }}
+          className={` bg-base-100 shadow-themeContainer w-full origin-top overflow-hidden `}
+        >
+          <motion.div className="pt-[20px]">
+            <motion.h3 className="text-center mb-[5px] text-bodyM">
+              Select Theme
+            </motion.h3>
+            <ThemeCarousel setTheme={setThemeHandler} />
+          </motion.div>
+        </motion.div>
+      </AnimatePresence>
+    </>
   );
 };
 

@@ -45,6 +45,7 @@ const config: Config = {
       },
       boxShadow: {
         themeContainer: "0 0 5px rgba(0,0,0,.15)",
+        themeHover: "0 0 5px 1px rgba(0,0,0, .2)",
       },
     },
   },
