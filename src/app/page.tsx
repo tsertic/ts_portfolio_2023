@@ -1,7 +1,14 @@
+import { NoiseBgPattern } from "@/components/esthetics/NoiseBgPattern";
+import { HeroIntro } from "@/components/pageSections/homepage";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-2xl text-center text-primary">TEXT PRIMARY1</h1>
+    <main className="min-h-screen">
+      <div className="container-wide">
+        <section>
+          <HeroIntro />
+        </section>
+      </div>
     </main>
   );
 }

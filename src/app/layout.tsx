@@ -1,19 +1,20 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Alata, Josefin_Sans } from "next/font/google";
+import { Alata, Josefin_Sans, PT_Mono, PT_Sans } from "next/font/google";
 import ThemeSwitch from "@/components/main/ThemeSwitch/ThemeSwitch";
 import { Header, Footer } from "@/components/layout";
 import { ReduxProvider, ThemeProvider } from "@/components/provider";
+import { NoiseBgPattern } from "@/components/esthetics/NoiseBgPattern";
 
-const alata = Alata({
+const ptMono = PT_Sans({
   subsets: ["latin"],
   weight: "400",
-  variable: "--font-alata",
+  variable: "--font-sans",
 });
-const josefinSans = Josefin_Sans({
+const ptSans = PT_Mono({
   subsets: ["latin"],
-  weight: "300",
-  variable: "--font-josefinsans",
+  weight: "400",
+  variable: "--font-mono",
 });
 
 export const metadata: Metadata = {
@@ -30,11 +31,15 @@ export default function RootLayout({
   return (
     <html lang="en" style={{ colorScheme: "color-scheme: banana" }}>
       <body
-        className={`${alata.variable} ${josefinSans.variable} text-bodyM font-alata bg-base-200 text-base-content transition-colors duration-75`}
+        className={`${ptMono.variable} ${ptSans.variable} text-bodyMMobile md:text-bodyM font-sans bg-base-100 text-base-content transition-colors duration-75 relative`}
       >
+        <div className="main-bg">
+          <NoiseBgPattern className="" />
+        </div>
         <ReduxProvider>
           <ThemeProvider>
             <ThemeSwitch />
+
             <Header />
             {children}
             <Footer />

@@ -10,8 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        josefinsans: ["var(--font-josefinsans)"],
-        alata: ["var(--font-alata)"],
+        sans: ["var(--font-sans)"],
+        mono: ["var(--font-mono)"],
       },
       colors: {
         primary: "rgb(var(--color-primary) / <alpha-value>)",
@@ -34,7 +34,7 @@ const config: Config = {
       fontSize: {
         nav: ["15px", { fontWeight: "400", lineHeight: "15px" }],
         navMobile: ["24px", { fontWeight: "400", lineHeight: "25px" }],
-        bodyM: ["16px", { fontWeight: "400", lineHeight: "26px" }],
+        bodyM: ["16px", { fontWeight: "400", lineHeight: "24px" }],
         bodyMMobile: ["14px", { fontWeight: "400", lineHeight: "23px" }],
         headingXL: ["72px", { fontWeight: "300", lineHeight: "70px" }],
         headingXLMobile: ["40px", { fontWeight: "300", lineHeight: "38px" }],

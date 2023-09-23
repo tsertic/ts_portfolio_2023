@@ -13,7 +13,8 @@ export type TIconType =
   | "instagram"
   | "twitterCheck"
   | "linkedin"
-  | "frontend-mentor";
+  | "frontend-mentor"
+  | "paintBucket";
 
 export type Tthemestype =
   | "light"

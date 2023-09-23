@@ -30,31 +30,33 @@ const ThemeSwitch = () => {
     dispatch(setCurrentTheme(theme));
   };
   return (
-    <>
-      <AnimatePresence>
-        <motion.div
-          layout
-          transition={{
-            duration: 1,
+    <AnimatePresence>
+      <motion.div
+        layout
+        initial={{
+          height: 0,
+          y: -200,
+        }}
+        transition={{
+          duration: 1,
 
-            damping: 25,
-            stiffness: 500,
-          }}
-          animate={{
-            height: showDrawer ? "auto" : 0,
-            y: showDrawer ? 0 : -200,
-          }}
-          className={` bg-base-100 shadow-themeContainer w-full origin-top overflow-hidden `}
-        >
-          <motion.div className="pt-[20px]">
-            <motion.h3 className="text-center mb-[5px] text-bodyM">
-              Select Theme
-            </motion.h3>
-            <ThemeCarousel setTheme={setThemeHandler} />
-          </motion.div>
+          damping: 25,
+          stiffness: 500,
+        }}
+        animate={{
+          height: showDrawer ? "auto" : 0,
+          y: showDrawer ? 0 : -200,
+        }}
+        className={` bg-base-200 shadow-themeContainer w-full origin-top overflow-hidden `}
+      >
+        <motion.div className="pt-[20px]">
+          <motion.h3 className="text-center mb-[5px] text-bodyM">
+            Select Theme
+          </motion.h3>
+          <ThemeCarousel setTheme={setThemeHandler} />
         </motion.div>
-      </AnimatePresence>
-    </>
+      </motion.div>
+    </AnimatePresence>
   );
 };
 

@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 @layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-mono;
+  }
   *[data-theme="light"] {
     --color-base-100: 255 255 255;
     --color-base-200: 247 247 249;
@@ -197,6 +205,12 @@
   }
   .link-hover {
     @apply relative after:scale-x-0 hover:after:scale-x-100 after:w-[50%] after:-translate-x-1/2 after:origin-left after:left-[50%] after:absolute after:h-[2px] after:bg-base-100 after:bottom-[-8px] after:transition-all after:duration-300;
+  }
+  .main-bg {
+    @apply absolute  left-0 top-0 bottom-0 right-0 z-[-1] w-full h-full overflow-hidden bg-gradient-to-br from-base-100/10 to-base-300;
+  }
+  .list-dot {
+    @apply w-[5px] h-[5px] bg-base-content inline-block translate-y-[-3px] mr-[10px];
   }
 }
 

@@ -11,7 +11,10 @@ export const BrandLogo = () => {
       className="hover:text-primary transition-universal"
     >
       <AriaDescText>homepage</AriaDescText>
-      <div aria-hidden={true} className="flex gap-[4px] items-center">
+      <div
+        aria-hidden={true}
+        className="flex gap-[5px]  md:gap-[10px] items-center"
+      >
         <Image
           width={48}
           height={48}
@@ -19,7 +22,7 @@ export const BrandLogo = () => {
           src="/images/ts-avatar-transparent.png"
           loading="eager"
         />
-        <div className="flex flex-wrap gap-[4px] max-md:mt-[8px]">
+        <div className="flex flex-wrap gap-[4px] md:mt-[5px]">
           <h3 className=" text-nav font-bold">Tomislav Sertic</h3>
           <Icons
             iconName="twitterCheck"
