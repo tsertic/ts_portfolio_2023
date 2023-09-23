@@ -231,3 +231,6 @@
     @apply border-[1px] border-red-500;
   }
 }
+.tap-highlight-removed {
+  -webkit-tap-highlight-color: transparent;
+}

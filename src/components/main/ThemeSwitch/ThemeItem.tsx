@@ -14,7 +14,7 @@ export const ThemeItem: React.FC<IThemeItem> = ({ theme, setTheme }) => {
       <button
         className={` flex flex-col items-center gap-[5px]  bg-base-100 text-base-content border-2 rounded-[5px]  pt-[5px] pb-[8px] px-[15px] ${
           currentTheme === theme ? "border-primary" : "border-transparent"
-        } shadow-sm hover:scale-110 hover:shadow-themeHover  transition-universal focus:scale-100 focus:shadow-sm`}
+        } shadow-sm hover:scale-110 hover:shadow-themeHover  transition-universal focus:scale-100 focus:shadow-sm `}
         aria-label="select color theme 'Light'"
         data-theme={theme}
         onClick={() => setTheme(theme)}

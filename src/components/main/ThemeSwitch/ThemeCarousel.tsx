@@ -43,7 +43,7 @@ export const ThemeCarousel: React.FC<IThemeCarousel> = ({ setTheme }) => {
     >
       <motion.ul
         id="theme-menu"
-        className="flex gap-[25px] w-full pt-[10px] cursor-pointer pb-[20px] "
+        className="flex gap-[25px] w-full pt-[10px] cursor-pointer pb-[20px] tap-highlight-removed "
         drag="x"
         ref={containerRef}
         dragConstraints={{ right: 30, left: constraintLeft - 30 }}
