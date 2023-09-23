@@ -22,11 +22,13 @@ export const BrandLogo = () => {
           src="/images/ts-avatar-transparent.png"
           loading="eager"
         />
-        <div className="flex flex-wrap gap-[4px] md:mt-[5px]">
-          <h3 className=" text-nav font-bold">Tomislav Sertic</h3>
+        <div className="flex flex-wrap items-center md:gap-[4px] md:mt-[5px]">
+          <h3 className=" text-nav font-bold  max-md:max-w-[75px] max-md:leading-[20px]">
+            Tomislav Sertic
+          </h3>
           <Icons
             iconName="twitterCheck"
-            className="w-[20px] h-[20px] fill-blue-500"
+            className="w-[20px] h-[20px] fill-blue-500 mt-[-2px]"
           />
         </div>
       </div>

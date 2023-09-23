@@ -3,14 +3,14 @@ import { ServicesText } from "./ServicesText";
 
 export const HeroIntro = () => {
   return (
-    <div className="pt-[150px] max-w-[850px] mx-auto w-full">
+    <div className="pt-[75px] md:pt-[150px] w-full max-w-[850px] mx-auto ">
       <h1 className="uppercase text-primary font-bold mb-[16px]">
         Hello, my name is Tomislav
       </h1>
-      <h2 className="text-headingLMobile md:text-headingL mb-[32px] tracking-[5px] uppercase font-normal">
-        I make <ServicesText />
+      <h2 className="text-headingLMobile md:text-headingL mb-[24px] md:mb-[32px] tracking-[5px] uppercase font-normal flex flex-col md:flex-row w-full">
+        <span>I make</span> <ServicesText />
       </h2>
-      <ul className="pl-[16px] flex flex-col gap-[8px]">
+      <ul className="pl-[16px] flex flex-col gap-[5px] md:gap-[8px]">
         <li>
           <span className="list-dot"></span>
           Based in the charming city of Zagreb, Croatia, I am Tomislav Sertic, a

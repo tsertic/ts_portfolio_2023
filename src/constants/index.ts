@@ -4,7 +4,7 @@ export const NAV_LINKS = [
   {
     _id: "0",
     text: "about",
-    path: "/",
+    path: "/about",
     ariaLabel: "about",
   },
   {

@@ -33,15 +33,18 @@ const config: Config = {
       },
       fontSize: {
         nav: ["15px", { fontWeight: "400", lineHeight: "15px" }],
-        navMobile: ["24px", { fontWeight: "400", lineHeight: "25px" }],
+        navMobile: [
+          "24px",
+          { fontWeight: "400", lineHeight: "25px", letterSpacing: "3px" },
+        ],
         bodyM: ["16px", { fontWeight: "400", lineHeight: "24px" }],
         bodyMMobile: ["14px", { fontWeight: "400", lineHeight: "23px" }],
         headingXL: ["72px", { fontWeight: "300", lineHeight: "70px" }],
-        headingXLMobile: ["40px", { fontWeight: "300", lineHeight: "38px" }],
+        headingXLMobile: ["32px", { fontWeight: "300", lineHeight: "38px" }],
         headingL: ["48px", { lineHeight: "100%", fontWeight: "300" }],
-        headingLMobile: ["32px", { lineHeight: "100%", fontWeight: "300" }],
+        headingLMobile: ["26px", { lineHeight: "100%", fontWeight: "300" }],
         headingM: ["32px", { lineHeight: "100%", fontWeight: "300" }],
-        headingMMobile: ["24px", { lineHeight: "100%", fontWeight: "300" }],
+        headingMMobile: ["22px", { lineHeight: "100%", fontWeight: "300" }],
       },
       boxShadow: {
         themeContainer: "0 0 5px rgba(0,0,0,.15)",

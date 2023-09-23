@@ -7,7 +7,6 @@ export const shuffleWord = (
     .split("")
     .map((word, index) => {
       if (index < itteration) {
-        console.log(index, itteration, word, "u index<itteration");
         return word;
       } else {
         let numberInArray = Math.floor(Math.random() * lettersArray.length);

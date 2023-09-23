@@ -36,7 +36,10 @@ export const ServicesText = () => {
 
   const onMouseOverHandler = () => {};
   return (
-    <span className="uppercase" onMouseOver={onMouseOverHandler}>
+    <span
+      className="uppercase max-md:pl-[5px] max-md:mt-[5px]"
+      onMouseOver={onMouseOverHandler}
+    >
       {word}
     </span>
   );

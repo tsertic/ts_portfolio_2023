@@ -1,4 +1,3 @@
-import { NoiseBgPattern } from "@/components/esthetics/NoiseBgPattern";
 import { HeroIntro } from "@/components/pageSections/homepage";
 
 export default function Home() {

@@ -1,10 +1,10 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Alata, Josefin_Sans, PT_Mono, PT_Sans } from "next/font/google";
+import { PT_Mono, PT_Sans } from "next/font/google";
 import ThemeSwitch from "@/components/main/ThemeSwitch/ThemeSwitch";
 import { Header, Footer } from "@/components/layout";
 import { ReduxProvider, ThemeProvider } from "@/components/provider";
-import { NoiseBgPattern } from "@/components/esthetics/NoiseBgPattern";
+import { BgPattern } from "@/components/esthetics/BgPattern";
 
 const ptMono = PT_Sans({
   subsets: ["latin"],
@@ -33,13 +33,10 @@ export default function RootLayout({
       <body
         className={`${ptMono.variable} ${ptSans.variable} text-bodyMMobile md:text-bodyM font-sans bg-base-100 text-base-content transition-colors duration-75 relative`}
       >
-        <div className="main-bg">
-          <NoiseBgPattern className="" />
-        </div>
         <ReduxProvider>
           <ThemeProvider>
+            <BgPattern className="main-bg" />
             <ThemeSwitch />
-
             <Header />
             {children}
             <Footer />
