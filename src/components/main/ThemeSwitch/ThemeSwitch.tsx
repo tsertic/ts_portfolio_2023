@@ -38,7 +38,7 @@ const ThemeSwitch = () => {
           y: -200,
         }}
         transition={{
-          duration: 1,
+          duration: 0.5,
 
           damping: 25,
           stiffness: 500,
