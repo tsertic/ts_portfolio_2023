@@ -1,13 +1,9 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Alata, Josefin_Sans } from "next/font/google";
-
-import { ThemeProviderC } from "@/components/provider/ThemeProvider";
-import { ReduxProvider } from "@/components/provider/ReduxProvider";
 import ThemeSwitch from "@/components/main/ThemeSwitch/ThemeSwitch";
-import { Header } from "@/components/layout/Header/Header";
-import { Footer } from "@/components/layout/Footer/Footer";
-import { MotionLayout } from "@/components/provider/MotionLayout";
+import { Header, Footer } from "@/components/layout";
+import { ReduxProvider, ThemeProvider } from "@/components/provider";
 
 const alata = Alata({
   subsets: ["latin"],
@@ -37,14 +33,12 @@ export default function RootLayout({
         className={`${alata.variable} ${josefinSans.variable} text-bodyM font-alata bg-base-200 text-base-content transition-colors duration-75`}
       >
         <ReduxProvider>
-          <ThemeProviderC>
-            <MotionLayout>
-              <ThemeSwitch />
-              <Header />
-              {children}
-              <Footer />
-            </MotionLayout>
-          </ThemeProviderC>
+          <ThemeProvider>
+            <ThemeSwitch />
+            <Header />
+            {children}
+            <Footer />
+          </ThemeProvider>
         </ReduxProvider>
       </body>
     </html>
