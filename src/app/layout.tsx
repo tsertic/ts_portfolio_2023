@@ -8,7 +8,7 @@ import { BgPattern } from "@/components/esthetics/BgPattern";
 
 const ptMono = PT_Sans({
   subsets: ["latin"],
-  weight: "400",
+  weight: ["400"],
   variable: "--font-sans",
 });
 const ptSans = PT_Mono({

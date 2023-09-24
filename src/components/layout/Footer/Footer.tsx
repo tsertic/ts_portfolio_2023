@@ -5,7 +5,7 @@ import { PageMetrics } from "./PageMetrics";
 
 export const Footer = () => {
   return (
-    <footer className="bg-transparent mt-auto py-[30px] border-[2px] border-base-300">
+    <footer className=" mt-auto py-[25px] border-[3px] border-base-300 bg-base-300/30  z-20">
       <div className="container-wide flex justify-between items-center">
         <FooterNav />
         <PageMetrics />

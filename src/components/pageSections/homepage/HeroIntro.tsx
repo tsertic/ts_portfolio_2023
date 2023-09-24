@@ -3,11 +3,11 @@ import { ServicesText } from "./ServicesText";
 
 export const HeroIntro = () => {
   return (
-    <div className="pt-[75px] md:pt-[150px] w-full max-w-[850px] mx-auto ">
+    <div className=" w-full max-w-[850px] mx-auto mb-[20px] md:mb-[40px]">
       <h1 className="uppercase text-primary font-bold mb-[16px]">
         Hello, my name is Tomislav
       </h1>
-      <h2 className="text-headingLMobile md:text-headingL mb-[24px] md:mb-[32px] tracking-[5px] uppercase font-normal flex flex-col md:flex-row w-full">
+      <h2 className="text-headingLMobile md:text-headingL mb-[24px] md:mb-[32px] tracking-[5px] uppercase font-normal md:gap-[20px] flex flex-col md:flex-row w-full">
         <span>I make</span> <ServicesText />
       </h2>
       <ul className="pl-[16px] flex flex-col gap-[5px] md:gap-[8px]">
@@ -19,17 +19,23 @@ export const HeroIntro = () => {
         </li>
         <li>
           <span className="list-dot"></span>
-          My coding journey revolves around harnessing the power of JavaScript,
-          React, Next.js, Node.js, and TypeScript to create captivating
-          websites, innovative applications, and robust REST API services.
+          My coding journey centers on harnessing the versatility of JavaScript,
+          TypeScript, React, Next.js, Node.js, and an array of database
+          technologies to craft captivating websites, innovative applications,
+          and robust REST API services that seamlessly connect data and user
+          experiences
         </li>
         <li>
           <span className="list-dot"></span>
           With a strong foundation in modern web technologies, I am driven by a
           relentless pursuit of perfection, always striving to merge creativity
           with functionality, and make the digital world a more engaging and
-          user-friendly place. My work is not just lines of code; it&apos;s a
-          symphony of design, interactivity, and seamless functionality.
+          user-friendly place.
+        </li>
+        <li>
+          <span className="list-dot"></span>
+          My work is not just lines of code; it&apos;s a symphony of design,
+          interactivity, and seamless functionality.
         </li>
       </ul>
     </div>

@@ -19,7 +19,7 @@ export const PageMetrics = () => {
             <span
               title={`${item.text} - ${item.score}`}
               key={item._id}
-              className=" w-[30px] h-[30px] border-[2px] bg-green-200 text-green-500 border-green-500 rounded-full p-[6px] text-[10px] flex items-center justify-center font-bold"
+              className=" w-[30px] h-[30px] border-[2px] bg-green-100 text-green-600 border-green-500 rounded-full p-[6px] text-[10px] flex items-center justify-center font-bold"
             >
               {item.score}
             </span>

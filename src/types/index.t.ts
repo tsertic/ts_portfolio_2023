@@ -14,7 +14,8 @@ export type TIconType =
   | "twitterCheck"
   | "linkedin"
   | "frontend-mentor"
-  | "paintBucket";
+  | "paintBucket"
+  | "arrow";
 
 export type Tthemestype =
   | "light"

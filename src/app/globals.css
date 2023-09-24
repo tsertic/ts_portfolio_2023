@@ -223,6 +223,9 @@
 }
 
 @layer utilities {
+  .page-top-padding {
+    @apply pt-[75px] md:pt-[100px];
+  }
   .transition-universal {
     @apply transition-all duration-300;
   }
