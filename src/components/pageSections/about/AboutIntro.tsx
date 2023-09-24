@@ -6,8 +6,8 @@ export const AboutIntro = () => {
       <div className="container-wide"></div>
       <div className="flex max-md:flex-col gap-[50px] relative">
         <div className="w-full max-md:px-[16px] md:w-[40vw] h-[400px] relative ">
-          <div className="absolute top-[-80px] md:top-[-100px] left-[20%] md:left-[15%] lg:left-[20%] lg:top-[-120px] xl:top-[-150px] w-[100px] h-[200px] ">
-            <p className="text-center text-bodyL pt-[10px] pl-[20px]">
+          <div className="absolute top-[-40px] lg:top-[-100px] left-[20%] md:left-[15%] lg:left-[20%] lg:top-[-120px] xl:top-[-150px] w-[200px] h-[140px] lg:h-[200px] ">
+            <p className="text-center text-bodyL pt-[10px] pl-[20px] absolute top-[-30px] left-[50px] w-[150px]">
               this guy
             </p>
             <Image
@@ -33,7 +33,7 @@ export const AboutIntro = () => {
             />
           </picture>
         </div>
-        <div className="w-full md:max-w-[40vw] flex flex-col justify-center gap-[16px] relative">
+        <div className="w-full md:max-w-[40vw] flex flex-col justify-center gap-[16px] relative max-md:px-[16px] max-md:text-center">
           <p className="text-bodyLMobile md:text-bodyL">
             I&apos;m Tomislav Sertic, full-stack developer who leans more
             towards the artistry of front-end development,based in the charming

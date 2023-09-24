@@ -199,9 +199,7 @@
   .color-circle {
     @apply w-[25px] h-[25px] rounded-full border-[2px] border-white  ml-[-5px];
   }
-  .container-wide {
-    @apply w-full max-w-[1110px] mx-auto max-[1158px]:px-[16px];
-  }
+
   .social-icon {
     @apply group-hover:fill-primary-focus fill-base-100 transition-all duration-300;
   }
@@ -214,17 +212,33 @@
   .list-dot {
     @apply w-[5px] h-[5px] bg-base-content inline-block translate-y-[-3px] mr-[10px];
   }
-  .footer-nav-desc {
-    @apply;
-  }
-  .footer-nav-link {
-    @apply;
-  }
 }
 
 @layer utilities {
-  .page-top-padding {
-    @apply pt-[75px] md:pt-[100px];
+  .container-wide {
+    @apply w-full max-w-[1110px] mx-auto max-[1158px]:px-[16px];
+  }
+  .container-article {
+    @apply w-full max-w-[700px] mx-auto max-[732px]:px-[16px];
+  }
+
+  .article-h2 {
+    @apply text-headingMMobile md:text-headingM mt-[40px] mb-[20px] uppercase border-b-[1px] border-base-content/20;
+  }
+  .article-h3 {
+    @apply text-headingSMobile md:text-headingS mb-[10px] mt-[24px];
+  }
+  .article-p {
+    @apply mb-[8px] text-bodyMMobile md:text-bodyM;
+  }
+  .article-emphesise {
+    @apply text-primary font-bold;
+  }
+  .article-text-link {
+    @apply border-b-[3px]  border-primary hover:border-none hover:text-primary transition-all duration-200;
+  }
+  .page-padding {
+    @apply pt-[75px] md:pt-[100px] pb-[40px] md:pb-[60px];
   }
   .transition-universal {
     @apply transition-all duration-300;
