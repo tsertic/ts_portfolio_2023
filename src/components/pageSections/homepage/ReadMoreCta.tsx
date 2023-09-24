@@ -19,7 +19,7 @@ export const ReadMoreCta = () => {
     <div className="max-w-[850px] mx-auto">
       <Link
         href="/about"
-        aria-label="read more about me"
+        aria-label="Get to know me better"
         className="flex items-center link-hover w-fit"
       >
         Get to know me better

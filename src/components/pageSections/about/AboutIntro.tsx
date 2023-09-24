@@ -6,7 +6,7 @@ export const AboutIntro = () => {
       <div className="container-wide"></div>
       <div className="flex max-md:flex-col gap-[50px] relative">
         <div className="w-full max-md:px-[16px] md:w-[40vw] h-[400px] relative ">
-          <div className="absolute top-[-40px] lg:top-[-100px] left-[20%] md:left-[15%] lg:left-[20%] lg:top-[-120px] xl:top-[-150px] w-[200px] h-[140px] lg:h-[200px] ">
+          <div className="absolute top-[-40px] lg:top-[-100px] left-[10%] md:left-[15%] lg:left-[20%]  xl:top-[-150px] w-[200px] h-[140px] lg:h-[200px] ">
             <p className="text-center text-bodyL pt-[10px] pl-[20px] absolute top-[-30px] left-[50px] w-[150px]">
               this guy
             </p>
@@ -16,6 +16,7 @@ export const AboutIntro = () => {
               alt="arrow"
               aria-hidden="true"
               className=" h-full object-fill "
+              loading="eager"
             />
           </div>
           <picture>
@@ -29,6 +30,7 @@ export const AboutIntro = () => {
               width={730}
               height={676}
               alt="Tomislav Sertic with dog"
+              loading="eager"
               className="w-full h-full object-cover  max-md:rounded-[10px] md:rounded-r-[10px]"
             />
           </picture>

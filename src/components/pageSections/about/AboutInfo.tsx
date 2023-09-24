@@ -75,10 +75,10 @@ export const AboutInfo = () => {
         <a
           href="https://www.arctis.hr"
           target="_blank"
-          aria-label="arctis d.o.o."
+          aria-label="Arctis d.o.o"
           className="article-text-link"
         >
-          Artis d.o.o
+          Arctis d.o.o
         </a>
         , the regional representatives for the Archibus Workplace Management
         System (IWMS).
@@ -140,7 +140,7 @@ export const AboutInfo = () => {
         <a
           href="https://www.instagram.com/tsertic5/"
           target="_blank"
-          aria-label="instagram profile"
+          aria-label="Instagram profile"
           className="article-text-link "
         >
           Instagram profile
