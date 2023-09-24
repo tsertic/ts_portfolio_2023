@@ -54,57 +54,28 @@ export const SOCIAL_ICONS: ISocialIconItem[] = [
   },
 ];
 
-export const creationsCardItems = [
+export const pageMetrics = [
   {
-    _id: "1",
-    imgUrlDesktop: "/images/desktop/image-deep-earth.jpg",
-    imgUrlMobile: "/images/mobile/image-deep-earth.jpg",
-    text: "DEEP EARTH",
+    _id: "0",
+    score: "100",
+    text: "performance",
   },
   {
     _id: "1",
-    imgUrlDesktop: "/images/desktop/image-night-arcade.jpg",
-    imgUrlMobile: "/images/mobile/image-night-arcade.jpg",
-    text: "night arcade",
+    score: "100",
+    text: "Accessibility",
   },
   {
     _id: "2",
-    imgUrlDesktop: "/images/desktop/image-soccer-team.jpg",
-    imgUrlMobile: "/images/mobile/image-soccer-team.jpg",
-    text: "soccer team vr",
+    score: "100",
+    text: "Best Practices",
   },
   {
     _id: "3",
-    imgUrlDesktop: "/images/desktop/image-grid.jpg",
-    imgUrlMobile: "/images/mobile/image-grid.jpg",
-    text: "the grid",
-  },
-  {
-    _id: "4",
-    imgUrlDesktop: "/images/desktop/image-from-above.jpg",
-    imgUrlMobile: "/images/mobile/image-from-above.jpg",
-    text: "from up above vr",
-  },
-  {
-    _id: "5",
-    imgUrlDesktop: "/images/desktop/image-pocket-borealis.jpg",
-    imgUrlMobile: "/images/mobile/image-pocket-borealis.jpg",
-    text: "pocket borealis",
-  },
-  {
-    _id: "6",
-    imgUrlDesktop: "/images/desktop/image-curiosity.jpg",
-    imgUrlMobile: "/images/mobile/image-curiosity.jpg",
-    text: "the curiosity",
-  },
-  {
-    _id: "7",
-    imgUrlDesktop: "/images/desktop/image-fisheye.jpg",
-    imgUrlMobile: "/images/mobile/image-fisheye.jpg",
-    text: "make it fisheye",
+    score: "100",
+    text: "SEO",
   },
 ];
-
 export const LETTERS = [
   "A",
   "B",

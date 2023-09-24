@@ -41,7 +41,7 @@ export const MobileMenu: React.FC<IMobileMenu> = ({ show, closeMenu }) => {
             Close
           </button>
         </div>
-        <nav className="h-full flex justify-center items-center">
+        <nav className="h-full flex justify-center  pt-[100px]">
           <ul className="flex flex-col gap-[25px]">
             {NAV_LINKS.map((link) => {
               return (
