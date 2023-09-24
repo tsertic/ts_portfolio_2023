@@ -9,11 +9,11 @@ const page = () => {
         </h1>
         <p>Last Updated: 24.09.2024</p>
         <p>
-          Tomislav Sertic operates the website https://tsertic.dev (the
-          "Service"). This page informs you of our policies regarding the
-          collection, use, and disclosure of personal data when you use our
-          Service and the choices you have associated with that data. We do not
-          collect any personal information or use cookies on our website.
+          Tomislav Sertic operates the website https://tsertic.dev . This page
+          informs you of our policies regarding the collection, use, and
+          disclosure of personal data when you use our Service and the choices
+          you have associated with that data. We do not collect any personal
+          information or use cookies on our website.
         </p>
         <h2 className="text-headingMMobile md:text-headingM">
           Information Collection And Use
@@ -30,7 +30,7 @@ const page = () => {
         <p>
           Our Service may contain links to other sites that are not operated by
           us. If you click on a third-party link, you will be directed to that
-          third party's site. We strongly advise you to review the Privacy
+          third party&apos;s site. We strongly advise you to review the Privacy
           Policy of every site you visit. We have no control over and assume no
           responsibility for the content, privacy policies, or practices of any
           third-party sites or services.
