@@ -14,22 +14,27 @@ const config: Config = {
         mono: ["var(--font-mono)"],
       },
       colors: {
-        primary: "rgb(var(--color-primary) / <alpha-value>)",
-        "primary-focus": "rgb(var(--color-primary-focus) / <alpha-value>)",
-        "primary-content": "rgb(var(--color-primary-content) / <alpha-value>)",
-
-        secondary: "rgb(var(--color-secondary) / <alpha-value>)",
-        "secondary-focus": "rgb(var(--color-secondary-focus) / <alpha-value>)",
-        "secondary-content":
-          "rgb(var(--color-secondary-content) / <alpha-value>)",
-        neutral: "rgb(var(--color-neutral) / <alpha-value>)",
-        "neutral-focus": "rgb(var(--color-neutral-focus) / <alpha-value>)",
-        "neutral-content": "rgb(var(--color-neutral-content) / <alpha-value>)",
-
-        "base-100": "rgb(var(--color-base-100) / <alpha-value>)",
-        "base-200": "rgb(var(--color-base-200) / <alpha-value>)",
-        "base-300": "rgb(var(--color-base-300) / <alpha-value>)",
-        "base-content": "rgb(var(--color-base-content) / <alpha-value>)",
+        primary: {
+          DEFAULT: "rgb(var(--color-primary) / <alpha-value>)",
+          focus: "rgb(var(--color-primary-focus) / <alpha-value>)",
+          content: "rgb(var(--color-primary-content) / <alpha-value>)",
+        },
+        secondary: {
+          DEFAULT: "rgb(var(--color-secondary) / <alpha-value>)",
+          focus: "rgb(var(--color-secondary-focus) / <alpha-value>)",
+          content: "rgb(var(--color-secondary-content) / <alpha-value>)",
+        },
+        neutral: {
+          DEFAULT: "rgb(var(--color-neutral) / <alpha-value>)",
+          focus: "rgb(var(--color-neutral-focus) / <alpha-value>)",
+          content: "rgb(var(--color-neutral-content) / <alpha-value>)",
+        },
+        base: {
+          100: "rgb(var(--color-base-100) / <alpha-value>)",
+          200: "rgb(var(--color-base-200) / <alpha-value>)",
+          300: "rgb(var(--color-base-300) / <alpha-value>)",
+          content: "rgb(var(--color-base-content) / <alpha-value>)",
+        },
       },
       fontSize: {
         nav: ["15px", { fontWeight: "400", lineHeight: "15px" }],
