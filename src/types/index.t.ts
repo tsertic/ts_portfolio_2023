@@ -28,3 +28,7 @@ export type Tthemestype =
   | "sephiroth"
   | "brownie"
   | "zerg";
+
+export interface IProjectData {
+  title: string;
+}

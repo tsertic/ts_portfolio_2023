@@ -41,10 +41,21 @@ export default defineType({
       ],
     }),
     defineField({
+      name: "previewVideo",
+      title: "Preview Video",
+      type: "videoFile",
+    }),
+    defineField({
       name: "technologies",
       title: "Technologies",
       type: "array",
       of: [{ type: "reference", to: { type: "technology" } }],
+    }),
+    defineField({
+      name: "categories",
+      title: "Categories",
+      type: "array",
+      of: [{ type: "reference", to: { type: "category" } }],
     }),
     defineField({
       name: "createdAt",
@@ -53,13 +64,18 @@ export default defineType({
     }),
     defineField({
       name: "repository",
-      title: "Code Repository",
+      title: "Code Repository url",
       type: "url",
     }),
     defineField({
       name: "live",
-      title: "live preview",
+      title: "live preview url",
       type: "url",
+    }),
+    defineField({
+      name: "priority",
+      title: "Priority",
+      type: "number",
     }),
     defineField({
       name: "body",
