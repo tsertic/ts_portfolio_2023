@@ -4,7 +4,7 @@ import React from "react";
 import { usePathname } from "next/navigation";
 export const DesktopNavigation = () => {
   const path = usePathname();
-  console.log(path);
+
   return (
     <nav id="header-navigation" className="max-md:hidden">
       <ul className="flex gap-[32px]">
