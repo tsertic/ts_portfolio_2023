@@ -46,3 +46,5 @@ export interface IProjectData {
   priority: number;
   body: TypedObject | TypedObject[];
 }
+
+export type TfilterOptions = "all" | "fullstack" | "frontend";

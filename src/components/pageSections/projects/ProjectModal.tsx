@@ -13,7 +13,12 @@ export const ProjectModal: React.FC<IProjectModal> = ({
   project,
   closeModal,
 }) => {
-  const { technologies, live, repository, title, video, body } = project;
+  const { technologies, live, repository, title, video, body, categories } =
+    project;
+  const getCategory = () => {
+    let arr = Object.values(categories).map((cat) => cat.title);
+    return arr;
+  };
   return (
     <motion.div
       initial={{ opacity: 0 }}

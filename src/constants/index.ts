@@ -1,6 +1,10 @@
-import { ISocialIconItem } from "@/types/index.t";
+import { ISocialIconItem, TfilterOptions } from "@/types/index.t";
 
-export const FILTER_OPTIONS = ["All", "FullStack", "Frontend", "Backend"];
+export const FILTER_OPTIONS: TfilterOptions[] = [
+  "all",
+  "fullstack",
+  "frontend",
+];
 
 export const NAV_LINKS = [
   {
