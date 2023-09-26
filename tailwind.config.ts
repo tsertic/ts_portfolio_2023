@@ -62,6 +62,10 @@ const config: Config = {
         themeContainer: "0 0 5px rgba(0,0,0,.15)",
         themeHover: "0 0 5px 1px rgba(0,0,0, .2)",
       },
+      backgroundColor: {
+        "neutral-gradient":
+          "linear-gradient(45deg, var(--color-neutral) , var(--color-neutral-focus))",
+      },
     },
   },
   plugins: [],

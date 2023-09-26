@@ -19,7 +19,8 @@ export type TIconType =
   | "paintBucket"
   | "arrow"
   | "backArrow"
-  | "openWindow";
+  | "openWindow"
+  | "github";
 
 export type Tthemestype =
   | "light"

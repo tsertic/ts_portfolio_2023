@@ -21,12 +21,6 @@ export const NAV_LINKS = [
   },
   {
     _id: "2",
-    text: "blog",
-    path: "/blog",
-    ariaLabel: "blog",
-  },
-  {
-    _id: "3",
     text: "contact",
     path: "/contact",
     ariaLabel: "contact",
@@ -49,8 +43,8 @@ export const SOCIAL_ICONS: ISocialIconItem[] = [
   {
     _id: "2",
     path: "/",
-    iconName: "frontend-mentor",
-    ariaLabel: "frontend-mentor",
+    iconName: "github",
+    ariaLabel: "github",
   },
   {
     _id: "3",
