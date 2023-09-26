@@ -6,13 +6,12 @@ import { ProjectList } from "@/components/pageSections/projects/ProjectList";
 
 const ProjectsPage = async () => {
   const projects = await getProjects();
-  console.log(projects);
   return (
-    <main className="container-wide page-padding relative">
+    <main className="container-wide page-padding relative ">
       <PageTitle>Projects</PageTitle>
-      <section>
+      <div className="mt-[30px] mb-[60px]">
         <ProjectFilter />
-      </section>
+      </div>
       <section>{projects && <ProjectList projects={projects} />}</section>
     </main>
   );

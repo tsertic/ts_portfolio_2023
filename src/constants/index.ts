@@ -1,5 +1,7 @@
 import { ISocialIconItem } from "@/types/index.t";
 
+export const FILTER_OPTIONS = ["All", "FullStack", "Frontend", "Backend"];
+
 export const NAV_LINKS = [
   {
     _id: "0",

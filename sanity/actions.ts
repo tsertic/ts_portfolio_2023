@@ -1,8 +1,8 @@
 import { groq } from "next-sanity";
 import { readClient } from "./lib/client";
-import { buildQuery } from "./utils";
+import { IProjectData } from "@/types/index.t";
 
-export const getProjects = async () => {
+export const getProjects = async (): Promise<IProjectData[]> => {
   try {
     const resources = await readClient.fetch(
       groq`*[_type=='project']{
@@ -12,5 +12,6 @@ export const getProjects = async () => {
     return resources;
   } catch (error) {
     console.log(error);
+    throw new Error("something went wrong fetching data");
   }
 };

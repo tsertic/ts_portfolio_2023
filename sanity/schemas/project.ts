@@ -9,6 +9,7 @@ export default defineType({
       name: "title",
       title: "Title",
       type: "string",
+      validation: (Rule: any) => Rule.required(),
     }),
     defineField({
       name: "slug",
@@ -18,18 +19,21 @@ export default defineType({
         source: "title",
         maxLength: 96,
       },
+      validation: (Rule: any) => Rule.required(),
     }),
     defineField({
       name: "author",
       title: "Author",
       type: "reference",
       to: { type: "author" },
+      validation: (Rule: any) => Rule.required(),
     }),
     defineField({
       name: "mainImage",
       title: "Main image",
       type: "image",
       options: {
+        storeOriginalFilename: true,
         hotspot: true,
       },
       fields: [
@@ -39,28 +43,36 @@ export default defineType({
           title: "Alternative Text",
         },
       ],
+      validation: (Rule: any) => Rule.required(),
     }),
     defineField({
       name: "previewVideo",
       title: "Preview Video",
       type: "videoFile",
+      options: {
+        storeOriginalFilename: true,
+      },
+      validation: (Rule: any) => Rule.required(),
     }),
     defineField({
       name: "technologies",
       title: "Technologies",
       type: "array",
       of: [{ type: "reference", to: { type: "technology" } }],
+      validation: (Rule: any) => Rule.required(),
     }),
     defineField({
       name: "categories",
       title: "Categories",
       type: "array",
       of: [{ type: "reference", to: { type: "category" } }],
+      validation: (Rule: any) => Rule.required(),
     }),
     defineField({
       name: "createdAt",
       title: "Created at",
       type: "datetime",
+      validation: (Rule: any) => Rule.required(),
     }),
     defineField({
       name: "repository",
@@ -76,6 +88,7 @@ export default defineType({
       name: "priority",
       title: "Priority",
       type: "number",
+      validation: (Rule: any) => Rule.required(),
     }),
     defineField({
       name: "body",

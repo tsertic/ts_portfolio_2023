@@ -8,7 +8,7 @@ import { BgPattern } from "@/components/esthetics/BgPattern";
 
 const ptMono = PT_Sans({
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["400", "700"],
   variable: "--font-sans",
 });
 const ptSans = PT_Mono({
@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en" style={{ colorScheme: "color-scheme: banana" }}>
       <body
-        className={`${ptMono.variable} ${ptSans.variable} text-bodyMMobile md:text-bodyM font-sans bg-base-100 text-base-content transition-colors duration-75 relative min-h-screen flex flex-col`}
+        className={`${ptMono.variable} ${ptSans.variable}  text-bodyMMobile md:text-bodyM font-sans bg-base-100 text-base-content transition-colors duration-75 relative min-h-screen flex flex-col`}
       >
         <ReduxProvider>
           <ThemeProvider>

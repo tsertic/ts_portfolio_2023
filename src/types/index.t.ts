@@ -1,3 +1,5 @@
+import { TypedObject } from "sanity";
+
 export interface ISocialIconItem {
   _id: string;
   path: string;
@@ -15,7 +17,9 @@ export type TIconType =
   | "linkedin"
   | "frontend-mentor"
   | "paintBucket"
-  | "arrow";
+  | "arrow"
+  | "backArrow"
+  | "openWindow";
 
 export type Tthemestype =
   | "light"
@@ -30,5 +34,15 @@ export type Tthemestype =
   | "zerg";
 
 export interface IProjectData {
+  _id: string;
   title: string;
+  image: string;
+  video: string;
+  technologies: { title: string }[];
+  categories: { title: string }[];
+  createdAt: string;
+  repository: string;
+  live: string;
+  priority: number;
+  body: TypedObject | TypedObject[];
 }
