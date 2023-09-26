@@ -7,7 +7,8 @@ export const getProjects = async (): Promise<IProjectData[]> => {
     const resources = await readClient.fetch(
       groq`*[_type=='project']{
         title,_id,"video":previewVideo.asset->url,"image":mainImage.asset->url,slug,categories[]->{title},technologies[]->{title},repository,live,body
-      }`
+      }`,
+      { next: { revalidate: 120 } }
     );
     return resources;
   } catch (error) {
