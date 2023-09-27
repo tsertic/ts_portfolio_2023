@@ -5,7 +5,7 @@ import React from "react";
 export const PageMetrics = () => {
   return (
     <a
-      href="https://pagespeed.web.dev/analysis/https-tsertic-dev/wvjaw29jxw?form_factor=desktop"
+      href="https://pagespeed.web.dev/analysis/https-tsertic-dev/sfz1x97ip5?form_factor=desktop"
       aria-label="page metrics"
       target="_blank"
     >
@@ -25,7 +25,7 @@ export const PageMetrics = () => {
             </span>
           );
         })}
-        <span className="text-[14px]">259 KiB</span>
+        <span className="text-[14px]">296 KiB</span>
       </span>
     </a>
   );
