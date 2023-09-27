@@ -6,6 +6,11 @@ export interface ISocialIconItem {
   iconName: TIconType;
   ariaLabel: string;
 }
+export interface IContactFormData {
+  name: string;
+  email: string;
+  message: string;
+}
 export type TIconType =
   | "hamburger"
   | "close"

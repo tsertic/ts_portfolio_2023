@@ -7,7 +7,7 @@ import author from "./schemas/author";
 import technology from "./schemas/technology";
 import project from "./schemas/project";
 import videoFileType from "./schemas/videoFileType";
-
+import contact from "./schemas/contact";
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
     post,
@@ -17,5 +17,6 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     blockContent,
     technology,
     videoFileType,
+    contact,
   ],
 };

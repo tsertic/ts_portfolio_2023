@@ -20,7 +20,7 @@ export const ReadMoreCta = () => {
       <Link
         href="/about"
         aria-label="Get to know me better"
-        className="flex items-center link-hover w-fit"
+        className="flex items-center link-hover w-fit font-bold"
       >
         Get to know me better
         <motion.span

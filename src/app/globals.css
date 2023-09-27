@@ -218,19 +218,23 @@
   .container-wide {
     @apply w-full max-w-[1110px] mx-auto max-[1158px]:px-[16px];
   }
+  .container-large {
+    @apply w-full max-w-[850px] mx-auto;
+  }
   .container-article {
     @apply w-full max-w-[700px] mx-auto max-[732px]:px-[16px];
   }
 
   .article-h2 {
-    @apply text-headingMMobile md:text-headingM mt-[40px] mb-[20px] uppercase border-b-[1px] border-base-content/20;
+    @apply text-headingMMobile md:text-headingM mt-[40px] mb-[20px] uppercase border-b-[1px] border-base-content/20 font-bold;
   }
   .article-h3 {
-    @apply text-headingSMobile md:text-headingS mb-[10px] mt-[24px];
+    @apply text-headingSMobile md:text-headingS mb-[10px] mt-[24px] font-bold;
   }
   .article-p {
     @apply mb-[8px] text-bodyMMobile md:text-bodyM;
   }
+
   .article-emphesise {
     @apply text-primary font-bold;
   }
@@ -238,7 +242,7 @@
     @apply border-b-[3px]  border-primary hover:border-none hover:text-primary transition-all duration-200;
   }
   .page-padding {
-    @apply pt-[75px] md:pt-[100px] pb-[40px] md:pb-[60px];
+    @apply pt-[55px] md:pt-[100px] pb-[40px] md:pb-[60px];
   }
   .transition-universal {
     @apply transition-all duration-300;
@@ -251,6 +255,9 @@
   }
   .primary-gradient-hover {
     @apply bg-gradient-to-br from-primary/40 to-primary-200/40;
+  }
+  .form-input {
+    @apply p-[10px] border-[2px] border-base-300  w-full bg-transparent focus:bg-base-100 focus:border-transparent outline-none rounded-[5px] placeholder:text-base-content  transition-universal;
   }
   .test-border {
     @apply border-[1px] border-red-500;
