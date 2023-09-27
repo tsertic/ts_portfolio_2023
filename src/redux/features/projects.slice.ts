@@ -12,7 +12,7 @@ const initialState: IInitialState = {
   filteredProjects: null,
   selectedProject: null,
   filter: "all",
-  show: 20,
+  show: 4,
 };
 
 const projectsSlice = createSlice({
@@ -28,13 +28,13 @@ const projectsSlice = createSlice({
       }
     },
     filterProjectsByCategory: (state, action: { payload: TfilterOptions }) => {
+      if (!state.projects) return;
+      let updatedProjects = state.projects;
       if (action.payload === "all") {
-        state.filteredProjects = state.projects;
+        updatedProjects = state.projects;
         state.filter = action.payload;
-        return;
-      }
-      if (state.projects) {
-        state.filteredProjects = state.projects.filter((project) => {
+      } else {
+        updatedProjects = state.projects.filter((project) => {
           let categoriesArr = Object.values(project.categories).map((cat) =>
             cat.title.toLowerCase()
           );
@@ -44,6 +44,10 @@ const projectsSlice = createSlice({
         });
         state.filter = action.payload;
       }
+      state.filteredProjects = updatedProjects;
+    },
+    showNextX: (state, action: { payload: number }) => {
+      state.show += action.payload;
     },
   },
 });
@@ -52,8 +56,10 @@ export const selectAllProjects = (state: { projects: IInitialState }) =>
   state.projects.filteredProjects;
 export const selectProjectFilterOpt = (state: { projects: IInitialState }) =>
   state.projects.filter;
+export const selectProjectShow = (state: { projects: IInitialState }) =>
+  state.projects.show;
 
-export const { fillProjectsData, filterProjectsByCategory } =
+export const { fillProjectsData, filterProjectsByCategory, showNextX } =
   projectsSlice.actions;
 
 export const projectsReducer = projectsSlice.reducer;

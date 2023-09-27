@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { IProjectData } from "@/types/index.t";
 import { ProjectCard } from "@/components/cards/ProjectCard";
 import { ProjectModal } from "./ProjectModal";
@@ -10,13 +10,27 @@ import {
   fillProjectsData,
   selectAllProjects,
   selectProjectFilterOpt,
+  selectProjectShow,
+  showNextX,
 } from "@/redux/features/projects.slice";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 export const ProjectList = ({ projects }: { projects: IProjectData[] }) => {
   const dispatch = useDispatch();
   const filteredProjects = useSelector(selectAllProjects);
+  const showProjectsNumber = useSelector(selectProjectShow);
   const filter = useSelector(selectProjectFilterOpt);
   const [showProject, setShowProject] = useState<null | IProjectData>(null);
+  const { ref, inView } = useInView({
+    /* Optional options */
+    threshold: 0,
+  });
+  //when in view add next 12 items , infinite scrolling
+  useEffect(() => {
+    if (inView) {
+      dispatch(showNextX(4));
+    }
+  }, [inView]);
   useEffect(() => {
     if (!filteredProjects) {
       dispatch(fillProjectsData(projects));
@@ -30,9 +44,9 @@ export const ProjectList = ({ projects }: { projects: IProjectData[] }) => {
   };
   return (
     <AnimatePresence>
-      <motion.div layoutRoot className="grid md:grid-cols-2 gap-[20px]">
+      <motion.div layoutRoot layout className="grid md:grid-cols-2 gap-[20px]">
         {filter === "all"
-          ? projects.map((project) => {
+          ? projects.slice(0, showProjectsNumber).map((project) => {
               const { _id } = project;
               return (
                 <ProjectCard
@@ -42,7 +56,7 @@ export const ProjectList = ({ projects }: { projects: IProjectData[] }) => {
                 />
               );
             })
-          : filteredProjects?.map((project) => {
+          : filteredProjects?.slice(0, showProjectsNumber).map((project) => {
               const { _id } = project;
               return (
                 <ProjectCard
@@ -52,6 +66,7 @@ export const ProjectList = ({ projects }: { projects: IProjectData[] }) => {
                 />
               );
             })}
+
         {showProject && (
           <AnimatePresence>
             <ProjectModal
@@ -60,6 +75,7 @@ export const ProjectList = ({ projects }: { projects: IProjectData[] }) => {
             />
           </AnimatePresence>
         )}
+        {projects && <div ref={ref}></div>}
       </motion.div>
     </AnimatePresence>
   );

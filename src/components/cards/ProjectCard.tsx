@@ -22,7 +22,7 @@ export const ProjectCard: React.FC<IProjectCard> = ({
       exit={{ opacity: 0 }}
       transition={{ duration: 0.6, type: "just" }}
       onClick={() => handleClick(cardData)}
-      className="rounded-[10px] md:h-[250px] lg:h-[300px] overflow-hidden shadow-md hover:shadow-primary/20 group relative transition-universal border-neutral border-[2px]"
+      className="rounded-[10px] h-[230px] md:h-[250px] lg:h-[300px] overflow-hidden shadow-md hover:shadow-primary/20 group relative border-neutral/20 border-[2px] w-full "
     >
       <Image
         src={image}

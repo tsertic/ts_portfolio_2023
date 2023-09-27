@@ -14,7 +14,7 @@ export const ProjectFilter = () => {
     dispatch(filterProjectsByCategory(option));
   };
   return (
-    <ul className=" mx-auto max-w-[600px] flex gap-[20px] justify-center">
+    <ul className=" mx-auto max-w-[600px] flex gap-[20px] justify-center items-center">
       {FILTER_OPTIONS.map((option) => {
         return (
           <li key={option}>

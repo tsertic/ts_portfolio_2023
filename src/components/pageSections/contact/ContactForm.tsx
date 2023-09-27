@@ -22,7 +22,6 @@ export const ContactForm = () => {
 
   const handleFormSubmit: ReactEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
-    console.log("form submit");
 
     if (!isValid) {
       setCheckStatus(() => true);
