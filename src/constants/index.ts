@@ -29,28 +29,28 @@ export const NAV_LINKS = [
 
 export const SOCIAL_ICONS: ISocialIconItem[] = [
   {
-    _id: "0",
-    path: "/",
-    iconName: "facebook",
-    ariaLabel: "facebook",
-  },
-  {
     _id: "1",
-    path: "/",
+    path: "https://www.linkedin.com/in/tomislav-serti%C4%87-85a0941a3/",
     iconName: "linkedin",
     ariaLabel: "linkedin",
   },
   {
     _id: "2",
-    path: "/",
+    path: "https://github.com/tsertic",
     iconName: "github",
     ariaLabel: "github",
   },
   {
     _id: "3",
-    path: "/",
+    path: "https://www.instagram.com/tsertic5/",
     iconName: "instagram",
     ariaLabel: "instagram",
+  },
+  {
+    _id: "0",
+    path: "https://www.facebook.com/tsertic5/",
+    iconName: "facebook",
+    ariaLabel: "facebook",
   },
 ];
 

@@ -8,7 +8,11 @@ export const SocialIconsList: React.FC<ISocialIconsList> = ({
   mobileMenu = false,
 }) => {
   return (
-    <ul className={`flex gap-[16px] ${!mobileMenu && "max-md:flex-col "}  `}>
+    <ul
+      className={`flex gap-[16px] ${
+        !mobileMenu && "max-md:flex-col "
+      }  md:pt-[10px]`}
+    >
       {SOCIAL_ICONS.map((icon, i) => {
         return (
           <li
@@ -16,8 +20,8 @@ export const SocialIconsList: React.FC<ISocialIconsList> = ({
             className={`${
               !mobileMenu
                 ? i % 2 === 0
-                  ? "mt-0 ml-[-10px] md:ml-0 md:mt-[-3px]"
-                  : "mt-0 ml-[10px] md:ml-0 md:mt-[3px]"
+                  ? "mt-0 ml-[-10px] md:ml-0 md:mt-[-5px]"
+                  : "mt-0 ml-[10px] md:ml-0 md:mt-[5px]"
                 : i % 2 === 0
                 ? "pt-[-3px]"
                 : "pt-[13px]"
