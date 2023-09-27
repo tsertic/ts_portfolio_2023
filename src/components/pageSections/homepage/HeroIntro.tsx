@@ -14,19 +14,19 @@ export const HeroIntro = () => {
         <li>
           <span className="list-dot"></span>
           Based in the charming city of Zagreb, Croatia, I am{" "}
-          <span className="text-primary">Tomislav Sertic</span>, a dedicated
-          full-stack developer who leans more towards the artistry of front-end
-          development.
+          <span className="text-primary font-bold">Tomislav Sertic</span>, a
+          dedicated full-stack developer who leans more towards the artistry of
+          front-end development.
         </li>
         <li>
           <span className="list-dot"></span>
           My coding journey centers on harnessing the versatility of{" "}
-          <span className="text-primary">JavaScript</span>,{" "}
-          <span className="text-primary">TypeScript</span>,{" "}
-          <span className="text-primary">React</span>,
-          <span className="text-primary"> Next.js</span>,{" "}
-          <span className="text-primary">Node.js</span>, and an array of
-          database technologies to craft captivating websites, innovative
+          <span className="text-primary font-bold">JavaScript</span>,{" "}
+          <span className="text-primary font-bold">TypeScript</span>,{" "}
+          <span className="text-primary font-bold">React</span>,
+          <span className="text-primary font-bold"> Next.js</span>,{" "}
+          <span className="text-primary font-bold">Node.js</span>, and an array
+          of database technologies to craft captivating websites, innovative
           applications, and robust REST API services that seamlessly connect
           data and user experiences
         </li>

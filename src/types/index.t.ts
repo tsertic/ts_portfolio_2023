@@ -30,14 +30,14 @@ export type TIconType =
 export type Tthemestype =
   | "light"
   | "dark"
-  | "system"
-  | "banana"
-  | "chatgpt"
-  | "chocobo"
-  | "adriatic"
-  | "sephiroth"
-  | "brownie"
-  | "zerg";
+  | "pikachu's thunderbolt"
+  | "flames of charizard"
+  | "gengars hounting shadows"
+  | "classic pokeball"
+  | "viridian forest"
+  | "eevee's evolutions"
+  | "karp karp magikarp"
+  | "mewtwo's vengeance";
 
 export interface IProjectData {
   _id: string;

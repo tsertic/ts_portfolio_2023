@@ -16,6 +16,7 @@ export const ThemeCarousel: React.FC<IThemeCarousel> = ({ setTheme }) => {
   const [node, setNode] = useState<HTMLElement>();
   //fix for framer-motion bug when resized window that constraints are gone
   //copied from https://github.com/framer/motion/issues/1659 - user dimitrisanastasiadis
+  //TODO: ul width doesnt cover drag of inside items, found out why and fix it
   const containerRef = useCallback((node: HTMLElement | null) => {
     if (!node) return;
     setNode(node);
@@ -43,7 +44,7 @@ export const ThemeCarousel: React.FC<IThemeCarousel> = ({ setTheme }) => {
     >
       <motion.ul
         id="theme-menu"
-        className="flex gap-[25px] w-full pt-[10px] cursor-pointer pb-[20px] tap-highlight-removed "
+        className="flex justify-start  gap-[25px] pt-[10px] cursor-pointer pb-[20px] tap-highlight-removed "
         drag="x"
         ref={containerRef}
         dragConstraints={{ right: 30, left: constraintLeft - 30 }}

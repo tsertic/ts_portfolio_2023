@@ -8,7 +8,7 @@ const ProjectsPage = async () => {
   const projects = await getProjects();
   return (
     <main className="container-wide page-padding relative ">
-      <PageTitle>Projects</PageTitle>
+      <PageTitle>Projects.</PageTitle>
       <div className="mt-[30px] mb-[60px]">
         <ProjectFilter />
       </div>

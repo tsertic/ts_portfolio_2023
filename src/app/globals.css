@@ -49,149 +49,172 @@
     --color-neutral-focus: 129 129 129;
     --color-neutral-content: 247 247 247;
   }
-  *[data-theme="banana"] {
-    --color-base-100: 248 245 240;
-    --color-base-200: 240 240 240;
-    --color-base-300: 220 220 220;
-    --color-base-content: 62 83 54;
+  *[data-theme="pikachu's thunderbolt"] {
+    --color-base-100: 255 255 102; /* Bright Yellow */
+    --color-base-200: 255 204 0; /* Yellow */
+    --color-base-300: 204 153 0; /* Dark Yellow */
+    --color-base-content: 40 40 40; /* White */
 
-    --color-primary: 246 218 115;
-    --color-primary-focus: 255 231 142;
-    --color-primary-content: 62 83 54;
-
-    --color-secondary: 229 91 126;
-    --color-secondary-focus: 198 62 96;
-    --color-secondary-content: 62 83 54;
-
-    --color-neutral: 37 47 33;
-    --color-neutral-focus: 58 75 51;
-    --color-neutral-content: 246 218 115;
-  }
-  *[data-theme="chatgpt"] {
-    --color-base-100: 242 242 242; /* Light Gray */
-    --color-base-200: 214 214 214; /* Gray */
-    --color-base-300: 179 179 179; /* Dark Gray */
-    --color-base-content: 33 33 33; /* Black */
-
-    --color-primary: 66 153 225; /* Blue */
+    --color-primary: 0 102 204; /* Electric Blue */
     --color-primary-content: 255 255 255; /* White */
-    --color-primary-focus: 41 121 181; /* Darker Blue */
+    --color-primary-focus: 0 51 102; /* Dark Blue */
 
-    --color-secondary: 255 183 77; /* Orange */
-    --color-secondary-focus: 236 139 38; /* Darker Orange */
-    --color-secondary-content: 33 33 33; /* Black */
-
-    --color-neutral: 247 247 247; /* Off-White */
-    --color-neutral-focus: 230 230 230; /* Light Gray */
-    --color-neutral-content: 33 33 33; /* Black */
-  }
-  *[data-theme="chocobo"] {
-    --color-base-100: 255 216 123; /* Chocobo Yellow */
-    --color-base-200: 255 193 46; /* Bright Yellow */
-    --color-base-300: 255 162 0; /* Orange Yellow */
-    --color-base-content: 33 33 33; /* Black */
-
-    --color-primary: 0 164 239; /* Chocobo Blue */
-    --color-primary-content: 255 255 255; /* White */
-    --color-primary-focus: 0 121 181; /* Darker Blue */
-
-    --color-secondary: 216 93 17; /* Chocobo Orange */
-    --color-secondary-focus: 186 75 11; /* Darker Orange */
-    --color-secondary-content: 33 33 33; /* Black */
-
-    --color-neutral: 247 247 247; /* Off-White */
-    --color-neutral-focus: 230 230 230; /* Light Gray */
-    --color-neutral-content: 33 33 33; /* Black */
-  }
-  *[data-theme="adriatic"] {
-    --color-base-100: 223 235 237; /* Pale Blue */
-    --color-base-200: 164 205 215; /* Sky Blue */
-    --color-base-300: 91 154 168; /* Sea Blue */
-    --color-base-content: 33 33 33; /* Black */
-
-    --color-primary: 0 114 143; /* Deep Blue */
-    --color-primary-content: 255 255 255; /* White */
-    --color-primary-focus: 0 89 111; /* Darker Blue */
-
-    --color-secondary: 255 204 102; /* Warm Yellow */
-    --color-secondary-focus: 255 179 71; /* Darker Yellow */
-    --color-secondary-content: 33 33 33; /* Black */
-
-    --color-neutral: 242 242 242; /* Light Gray */
-    --color-neutral-focus: 214 214 214; /* Gray */
-    --color-neutral-content: 33 33 33; /* Black */
-  }
-  *[data-theme="sephiroth"] {
-    --color-base-100: 244 244 244; /* Light Gray */
-    --color-base-200: 214 214 214; /* Gray */
-    --color-base-300: 179 179 179; /* Dark Gray */
-    --color-base-content: 33 33 33; /* Black */
-
-    --color-primary: 102 0 153; /* Deep Purple */
-    --color-primary-content: 255 255 255; /* White */
-    --color-primary-focus: 66 0 99; /* Darker Purple */
-
-    --color-secondary: 0 153 204; /* Cyan */
-    --color-secondary-focus: 0 107 142; /* Darker Cyan */
-    --color-secondary-content: 33 33 33; /* Black */
-
-    --color-neutral: 247 247 247; /* Off-White */
-    --color-neutral-focus: 230 230 230; /* Light Gray */
-    --color-neutral-content: 33 33 33; /* Black */
-  }
-  *[data-theme="brownie"] {
-    --color-base-100: 215 170 137; /* Light Brown */
-    --color-base-200: 180 120 88; /* Medium Brown */
-    --color-base-300: 125 70 40; /* Dark Brown */
-    --color-base-content: 255 255 255; /* White */
-
-    --color-primary: 111 78 55; /* Chocolate Brown */
-    --color-primary-content: 255 255 255; /* White */
-    --color-primary-focus: 88 59 42; /* Darker Chocolate Brown */
-
-    --color-secondary: 226 187 137; /* Cookie Beige */
-    --color-secondary-focus: 204 160 112; /* Darker Cookie Beige */
-    --color-secondary-content: 33 33 33; /* Black */
-
-    --color-neutral: 242 242 242; /* Light Gray */
-    --color-neutral-focus: 214 214 214; /* Gray */
-    --color-neutral-content: 33 33 33; /* Black */
-  }
-  *[data-theme="zerg"] {
-    --color-base-100: 116 88 150; /* Light Purple */
-    --color-base-200: 79 49 100; /* Medium Purple */
-    --color-base-300: 56 31 60; /* Dark Purple */
-    --color-base-content: 255 255 255; /* White */
-
-    --color-primary: 215 55 55; /* Red */
-    --color-primary-content: 255 255 255; /* White */
-    --color-primary-focus: 174 44 44; /* Darker Red */
-
-    --color-secondary: 105 98 129; /* Lavender */
-    --color-secondary-focus: 84 78 104; /* Darker Lavender */
+    --color-secondary: 204 0 0; /* Red */
     --color-secondary-content: 255 255 255; /* White */
+    --color-secondary-focus: 102 0 0; /* Dark Red */
 
-    --color-neutral: 214 214 214; /* Light Gray */
-    --color-neutral-focus: 179 179 179; /* Gray */
-    --color-neutral-content: 33 33 33; /* Black */
+    --color-neutral: 204 204 204; /* Light Gray */
+    --color-neutral-focus: 153 153 153; /* Medium Gray */
+    --color-neutral-content: 51 51 51; /* Dark Gray */
   }
-  *[data-theme="system"] {
-    --color-base-100: 192 192 192; /* Silver Gray */
-    --color-base-200: 160 160 160; /* Medium Gray */
-    --color-base-300: 128 128 128; /* Dark Gray */
+  *[data-theme="mewtwo's vengeance"] {
+    /* Base Colors (Variation of Mewtwo Purple) */
+    --color-base-100: 179 120 235; /* Light Mewtwo Purple */
+    --color-base-200: 153 85 204; /* Mewtwo Purple */
+    --color-base-300: 128 51 179; /* Dark Mewtwo Purple */
+    --color-base-content: 255 255 255; /* White */
+
+    /* Primary Colors (Readable on Base Colors) */
+    --color-primary: 0 0 0; /* Electric Blue */
+    --color-primary-content: 255 255 255; /* White */
+    --color-primary-focus: 0 122 204; /* Darker Blue */
+
+    /* Secondary Colors */
+    --color-secondary: 179 120 235; /* Light Mewtwo Purple */
+    --color-secondary-content: 255 255 255; /* White */
+    --color-secondary-focus: 153 85 204; /* Darker Mewtwo Purple */
+
+    /* Neutral Colors */
+    --color-neutral: 204 204 204; /* Light Gray */
+    --color-neutral-focus: 128 128 128; /* Medium Gray */
+    --color-neutral-content: 0 0 0; /* Black */
+  }
+  *[data-theme="classic pokeball"] {
+    /* Base Colors */
+    --color-base-100: 255 0 0; /* Red */
+    --color-base-200: 204 0 0; /* Dark Red */
+    --color-base-300: 153 0 0; /* Even Darker Red */
+    --color-base-content: 255 255 255; /* White */
+
+    /* Primary Colors (Readable on Base Colors) */
+    --color-primary: 0 0 0; /* White */
+    --color-primary-content: 255 255 255; /* Black */
+    --color-primary-focus: 230 230 230; /* Light Gray */
+
+    /* Secondary Colors */
+    --color-secondary: 0 0 0; /* Black */
+    --color-secondary-content: 255 255 255; /* White */
+    --color-secondary-focus: 51 51 51; /* Dark Gray */
+
+    /* Neutral Colors */
+    --color-neutral: 204 204 204; /* Light Gray */
+    --color-neutral-focus: 128 128 128; /* Medium Gray */
+    --color-neutral-content: 0 0 0; /* Black */
+  }
+  *[data-theme="viridian forest"] {
+    /* Base Colors */
+    --color-base-100: 192 255 192; /* Light Green */
+    --color-base-200: 153 204 153; /* Medium Green */
+    --color-base-300: 102 153 102; /* Dark Green */
     --color-base-content: 0 0 0; /* Black */
 
-    --color-primary: 0 0 255; /* Blue */
+    /* Primary Colors (Readable on Base Colors) */
+    --color-primary: 0 102 5; /* Forest Green */
     --color-primary-content: 255 255 255; /* White */
-    --color-primary-focus: 0 0 204; /* Darker Blue */
+    --color-primary-focus: 0 51 25; /* Darker Forest Green */
 
-    --color-secondary: 255 0 0; /* Red */
-    --color-secondary-focus: 204 0 0; /* Darker Red */
-    --color-secondary-content: 255 255 255; /* White */
+    /* Secondary Colors */
+    --color-secondary: 255 204 102; /* Peach */
+    --color-secondary-content: 0 0 0; /* Black */
+    --color-secondary-focus: 204 163 82; /* Darker Peach */
 
-    --color-neutral: 255 255 255; /* White */
-    --color-neutral-focus: 230 230 230; /* Light Gray */
+    /* Neutral Colors */
+    --color-neutral: 204 204 204; /* Light Gray */
+    --color-neutral-focus: 128 128 128; /* Medium Gray */
     --color-neutral-content: 0 0 0; /* Black */
+  }
+  *[data-theme="eevee's evolutions"] {
+    /* Base Colors */
+    --color-base-100: 204 153 102; /* Eevee Brown */
+    --color-base-200: 255 204 51; /* Flareon Orange */
+    --color-base-300: 255 153 102; /* Jolteon Yellow */
+    --color-base-content: 0 0 0; /* Black */
+
+    /* Primary Colors (Readable on Base Colors) */
+    --color-primary: 0 102 204; /* Vaporeon Blue */
+    --color-primary-content: 255 255 255; /* White */
+    --color-primary-focus: 0 51 102; /* Darker Vaporeon Blue */
+
+    /* Secondary Colors */
+    --color-secondary: 255 204 102; /* Peach */
+    --color-secondary-content: 0 0 0; /* Black */
+    --color-secondary-focus: 204 163 82; /* Darker Peach */
+
+    /* Neutral Colors */
+    --color-neutral: 204 204 204; /* Light Gray */
+    --color-neutral-focus: 128 128 128; /* Medium Gray */
+    --color-neutral-content: 0 0 0; /* Black */
+  }
+  *[data-theme="karp karp magikarp"] {
+    /* Base Colors */
+    --color-base-100: 255 255 255; /* White */
+    --color-base-200: 255 255 255; /* White */
+    --color-base-300: 255 255 255; /* White */
+    --color-base-content: 255 0 0; /* Red */
+
+    /* Primary Colors (Readable on Base Colors) */
+    --color-primary: 0 102 204; /* Blue */
+    --color-primary-content: 255 255 255; /* White */
+    --color-primary-focus: 0 51 102; /* Dark Blue */
+
+    /* Secondary Colors */
+    --color-secondary: 255 204 0; /* Gold */
+    --color-secondary-content: 0 0 0; /* Black */
+    --color-secondary-focus: 204 163 0; /* Darker Gold */
+
+    /* Neutral Colors */
+    --color-neutral: 204 204 204; /* Light Gray */
+    --color-neutral-focus: 128 128 128; /* Medium Gray */
+    --color-neutral-content: 0 0 0; /* Black */
+  }
+  *[data-theme="gengars hounting shadows"] {
+    /* Base Colors */
+    --color-base-100: 102 102 102; /* Dark Gray */
+    --color-base-200: 77 77 77; /* Medium Gray */
+    --color-base-300: 51 51 51; /* Dark Gray */
+    --color-base-content: 255 255 255; /* White */
+
+    /* Primary Colors (Readable on Base Colors) */
+    --color-primary: 239 16 225; /* Purple */
+    --color-primary-content: 255 255 255; /* White */
+    --color-primary-focus: 82 0 122; /* Darker Purple */
+
+    /* Secondary Colors */
+    --color-secondary: 204 0 0; /* Red */
+    --color-secondary-content: 255 255 255; /* White */
+    --color-secondary-focus: 163 0 0; /* Darker Red */
+
+    /* Neutral Colors */
+    --color-neutral: 153 153 153; /* Medium Gray */
+    --color-neutral-focus: 128 128 128; /* Medium Gray */
+    --color-neutral-content: 0 0 0; /* Black */
+  }
+  *[data-theme="flames of charizard"] {
+    /* Base Colors (Shiny Variations of Gold) */
+    --color-base-100: 255 204 0; /* Shiny Gold */
+    --color-base-200: 255 153 0; /* Bright Shiny Gold */
+    --color-base-300: 255 102 0; /* Shimmering Gold */
+    --color-base-content: 0 0 0; /* Black */
+
+    /* Primary Colors (Readable on Shiny Base Colors) */
+    --color-primary: 0 102 204; /* Blue */
+    --color-primary-content: 255 255 255; /* White */
+    --color-primary-focus: 0 51 102; /* Dark Blue */
+
+    /* Secondary Colors */
+    --color-secondary: 255 204 0; /* Shiny Gold */
+    --color-secondary-content: 0 0 0; /* Black */
+    --color-secondary-focus: 204 163 0; /* Darker Shiny Gold */
   }
 }
 

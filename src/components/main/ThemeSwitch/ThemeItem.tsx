@@ -12,14 +12,14 @@ export const ThemeItem: React.FC<IThemeItem> = ({ theme, setTheme }) => {
   return (
     <li key={theme}>
       <button
-        className={` flex flex-col items-center gap-[5px]  bg-base-100 text-base-content border-2 rounded-[5px]  pt-[5px] pb-[8px] px-[15px] ${
+        className={` flex flex-col min-w-[200px] items-center gap-[5px]  bg-base-100 text-base-content border-2 rounded-[5px]  pt-[5px] pb-[8px] px-[15px] ${
           currentTheme === theme ? "border-primary" : "border-transparent"
         } shadow-sm hover:scale-110 hover:shadow-themeHover  transition-universal focus:scale-100 focus:shadow-sm `}
         aria-label="select color theme 'Light'"
         data-theme={theme}
         onClick={() => setTheme(theme)}
       >
-        <span>{theme}</span>
+        <span className="text-[14px] capitalize">{theme}</span>
         <span className="flex mr-[-5px]" aria-hidden={true}>
           <span className="bg-primary color-circle"></span>
           <span className="bg-secondary color-circle"></span>
