@@ -63,9 +63,9 @@
     --color-secondary-content: 255 255 255; /* White */
     --color-secondary-focus: 102 0 0; /* Dark Red */
 
-    --color-neutral: 204 204 204; /* Light Gray */
-    --color-neutral-focus: 153 153 153; /* Medium Gray */
-    --color-neutral-content: 51 51 51; /* Dark Gray */
+    --color-neutral: 74 74 74;
+    --color-neutral-focus: 129 129 129;
+    --color-neutral-content: 247 247 247;
   }
   *[data-theme="mewtwo's vengeance"] {
     /* Base Colors (Variation of Mewtwo Purple) */
@@ -84,10 +84,9 @@
     --color-secondary-content: 255 255 255; /* White */
     --color-secondary-focus: 153 85 204; /* Darker Mewtwo Purple */
 
-    /* Neutral Colors */
-    --color-neutral: 204 204 204; /* Light Gray */
-    --color-neutral-focus: 128 128 128; /* Medium Gray */
-    --color-neutral-content: 0 0 0; /* Black */
+    --color-neutral: 74 74 74;
+    --color-neutral-focus: 129 129 129;
+    --color-neutral-content: 203 195 225;
   }
   *[data-theme="classic pokeball"] {
     /* Base Colors */
@@ -107,9 +106,9 @@
     --color-secondary-focus: 51 51 51; /* Dark Gray */
 
     /* Neutral Colors */
-    --color-neutral: 204 204 204; /* Light Gray */
+    --color-neutral: 255 255 255; /* Light Gray */
     --color-neutral-focus: 128 128 128; /* Medium Gray */
-    --color-neutral-content: 0 0 0; /* Black */
+    --color-neutral-content: 255 0 0; /* Black */
   }
   *[data-theme="viridian forest"] {
     /* Base Colors */
@@ -131,7 +130,7 @@
     /* Neutral Colors */
     --color-neutral: 204 204 204; /* Light Gray */
     --color-neutral-focus: 128 128 128; /* Medium Gray */
-    --color-neutral-content: 0 0 0; /* Black */
+    --color-neutral-content: 0 102 5;
   }
   *[data-theme="eevee's evolutions"] {
     /* Base Colors */
@@ -151,9 +150,9 @@
     --color-secondary-focus: 204 163 82; /* Darker Peach */
 
     /* Neutral Colors */
-    --color-neutral: 204 204 204; /* Light Gray */
+    --color-neutral: 0 102 204; /* Light Gray */
     --color-neutral-focus: 128 128 128; /* Medium Gray */
-    --color-neutral-content: 0 0 0; /* Black */
+    --color-neutral-content: 255 204 51; /* Black */
   }
   *[data-theme="karp karp magikarp"] {
     /* Base Colors */
@@ -173,9 +172,9 @@
     --color-secondary-focus: 204 163 0; /* Darker Gold */
 
     /* Neutral Colors */
-    --color-neutral: 204 204 204; /* Light Gray */
+    --color-neutral: 255 0 0; /* Light Gray */
     --color-neutral-focus: 128 128 128; /* Medium Gray */
-    --color-neutral-content: 0 0 0; /* Black */
+    --color-neutral-content: 255 255 255; /* Black */
   }
   *[data-theme="gengars hounting shadows"] {
     /* Base Colors */
@@ -195,9 +194,9 @@
     --color-secondary-focus: 163 0 0; /* Darker Red */
 
     /* Neutral Colors */
-    --color-neutral: 153 153 153; /* Medium Gray */
+    --color-neutral: 82 0 122;
     --color-neutral-focus: 128 128 128; /* Medium Gray */
-    --color-neutral-content: 0 0 0; /* Black */
+    --color-neutral-content: 230 230 230;
   }
   *[data-theme="flames of charizard"] {
     /* Base Colors (Shiny Variations of Gold) */
@@ -215,6 +214,9 @@
     --color-secondary: 255 204 0; /* Shiny Gold */
     --color-secondary-content: 0 0 0; /* Black */
     --color-secondary-focus: 204 163 0; /* Darker Shiny Gold */
+    --color-neutral: 153 153 153; /* Medium Gray */
+    --color-neutral-focus: 128 128 128; /* Medium Gray */
+    --color-neutral-content: 255 153 0; /* Black */
   }
 }
 
