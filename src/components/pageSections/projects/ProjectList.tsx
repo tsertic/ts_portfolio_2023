@@ -42,6 +42,7 @@ export const ProjectList = ({ projects }: { projects: IProjectData[] }) => {
   const handleClosePoject = () => {
     setShowProject(null);
   };
+  console.log(filteredProjects);
   return (
     <AnimatePresence>
       <motion.div layoutRoot layout className="grid md:grid-cols-2 gap-[20px]">

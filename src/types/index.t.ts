@@ -53,4 +53,4 @@ export interface IProjectData {
   body: TypedObject | TypedObject[];
 }
 
-export type TfilterOptions = "all" | "fullstack" | "frontend";
+export type TfilterOptions = "all" | "fullstack" | "frontend" | "ai" | "script";

@@ -4,6 +4,8 @@ export const FILTER_OPTIONS: TfilterOptions[] = [
   "all",
   "fullstack",
   "frontend",
+  "ai",
+  "script",
 ];
 
 export const NAV_LINKS = [

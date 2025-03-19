@@ -6,6 +6,7 @@ import { ProjectList } from "@/components/pageSections/projects/ProjectList";
 
 const ProjectsPage = async () => {
   const projects = await getProjects();
+
   return (
     <main className="container-wide page-padding relative ">
       <PageTitle>Projects.</PageTitle>

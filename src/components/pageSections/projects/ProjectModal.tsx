@@ -5,10 +5,13 @@ import { Icons } from "@/components/UI/Icons";
 import { AriaDescText } from "@/components/UI/AriaDescText";
 import { PortableText } from "@portabletext/react";
 import { CustomPortableTextComponents } from "@/components/sanity/CustomPortableTextComponents";
+import { isImageFile, isVideoFile } from "@/lib";
+import Image from "next/image";
 interface IProjectModal {
   project: IProjectData;
   closeModal: () => void;
 }
+
 export const ProjectModal: React.FC<IProjectModal> = ({
   project,
   closeModal,
@@ -57,14 +60,25 @@ export const ProjectModal: React.FC<IProjectModal> = ({
           <h3 className="text-headingSMobile md:text-headingS mb-[20px] !font-bold ">
             {title}
           </h3>
-          <video
-            src={video}
-            autoPlay={true}
-            loop={true}
-            width={600}
-            height={300}
-            className="w-full mb-[20px]"
-          ></video>
+          {isVideoFile(video) ? (
+            <video
+              src={video}
+              autoPlay={true}
+              loop={true}
+              width={600}
+              height={300}
+              className="w-full mb-[20px]"
+            ></video>
+          ) : isImageFile(video) ? (
+            <Image
+              src={video}
+              width={600}
+              height={300}
+              className="w-full mb-[20px]"
+              alt={title}
+            />
+          ) : null}
+
           <div className="mb-[20px]">
             <h3 className="text-bodyL font-bold">About:</h3>
             <PortableText

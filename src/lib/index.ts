@@ -15,3 +15,29 @@ export const shuffleWord = (
     })
     .join("");
 };
+
+export function isVideoFile(filename: string) {
+  const videoExtensions = [
+    ".mp4",
+    ".avi",
+    ".mov",
+    ".mkv",
+    ".webm",
+    ".flv",
+    ".wmv",
+  ];
+  return videoExtensions.some((ext) => filename.toLowerCase().endsWith(ext));
+}
+
+export function isImageFile(filename: string) {
+  const imageExtensions = [
+    ".jpg",
+    ".jpeg",
+    ".png",
+    ".gif",
+    ".bmp",
+    ".webp",
+    ".svg",
+  ];
+  return imageExtensions.some((ext) => filename.toLowerCase().endsWith(ext));
+}

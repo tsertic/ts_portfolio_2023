@@ -3,7 +3,7 @@ import { ServicesText } from "./ServicesText";
 
 export const HeroIntro = () => {
   return (
-    <div className=" container-large mb-[40px] md:mb-[50px]">
+    <div className="container-large mb-[40px] md:mb-[50px]">
       <h1 className="uppercase text-primary font-bold mb-[16px]">
         Hello, my name is Tomislav
       </h1>
@@ -23,12 +23,28 @@ export const HeroIntro = () => {
           My coding journey centers on harnessing the versatility of{" "}
           <span className="text-primary font-bold">JavaScript</span>,{" "}
           <span className="text-primary font-bold">TypeScript</span>,{" "}
-          <span className="text-primary font-bold">React</span>,
-          <span className="text-primary font-bold"> Next.js</span>,{" "}
+          <span className="text-primary font-bold">React</span>,{" "}
+          <span className="text-primary font-bold">Next.js</span>,{" "}
           <span className="text-primary font-bold">Node.js</span>, and an array
           of database technologies to craft captivating websites, innovative
           applications, and robust REST API services that seamlessly connect
-          data and user experiences
+          data and user experiences.
+        </li>
+        <li>
+          <span className="list-dot"></span>
+          Beyond traditional development, I specialize in{" "}
+          <span className="text-primary font-bold">
+            integrating AI solutions
+          </span>
+          , leveraging both local AI models and cloud-based services to enhance
+          applications with intelligent automation. My focus includes{" "}
+          <span className="text-primary font-bold">
+            developing SaaS solutions
+          </span>
+          , <span className="text-primary font-bold">chatbot systems</span>, and
+          various automation scripts that utilize cutting-edge AI models to
+          improve user interactions, optimize workflows, and enable smarter
+          decision-making within digital products.
         </li>
       </ul>
     </div>
