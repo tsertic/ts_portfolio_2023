@@ -2,18 +2,18 @@ import { groq } from "next-sanity";
 import { readClient, writeClient } from "./lib/client";
 import { IContactFormData, IProjectData } from "@/types/index.t";
 import { error } from "console";
-
+import { revalidatePath } from "next/cache";
 export const getProjects = async (): Promise<IProjectData[]> => {
   try {
     const resources = await readClient.fetch(
       groq`*[_type=='project']{
         title,_id,"video":previewVideo.asset->url,"image":mainImage.asset->url,slug,categories[]->{title},technologies[]->{title},repository,live,body,priority
-      } | order(priority desc)`,
-      { next: { revalidate: 120 } }
+      } | order(priority desc)`
     );
+    revalidatePath("/projects");
     return resources;
   } catch (error) {
-    console.log(error);
+    console.error(error);
     throw new Error("something went wrong fetching data");
   }
 };
